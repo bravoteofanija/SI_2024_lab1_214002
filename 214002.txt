@@ -1,0 +1,204 @@
+Lab1
+git init  (inicijaliziranje na git)
+    hint: Using 'master' as the name for the initial branch. This default branch name
+    hint: is subject to change. To configure the initial branch name to use in all
+    hint: of your new repositories, which will suppress this warning, call:
+    hint: 
+    hint:   git config --global init.defaultBranch <name>
+    hint: 
+    hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+    hint: 'development'. The just-created branch can be renamed via this command:
+    hint: 
+    hint:   git branch -m <name>
+
+git remote add origin https://github.com/bravoteofanija/SI_2024_lab1_214002.git  (povrzuvanje na remote repo vo lokalniot)
+
+
+nano README.md  (kreiranje na readme i dodavanje na podatocite)
+
+git add README.md  (dodavanje na readme file na git)
+
+git commit -m "Initial commit"  ( Prv commit)
+[master (root-commit) 21e5ef1] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+git push origin master  (pustanje na lokalnite promeni na remote repo)
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 245 bytes | 245.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+ * [new branch]      master -> master
+
+cp /home/teofanijabravo/Downloads/SILab1Main.java /home/teofanijabravo/myprojects/SI_2024_lab1_214002 
+cp /home/teofanijabravo/Downloads/SILab1_1.java /home/teofanijabravo/myprojects/SI_2024_lab1_214002 
+cp /home/teofanijabravo/Downloads/SILab1_2.java /home/teofanijabravo/myprojects/SI_2024_lab1_214002 (prevzemanje i kopiranje na trite fajlovi)
+
+git add .  (dodavanje na site promeni)
+
+git commit -m "Add starter code"  (pravenje commit)
+[master 59c179c] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+git checkout -b bug1  (kreiranje na nov branch i prefrlanje vo nego)
+
+git add SILab1_1.java  (dodavanje na promenite)
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 bc04005] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+git checkout master  (prefrlanje na branch master)
+
+git checkout -b bug2  (kreiranje na nov branch i prefrlanje vo nego)
+Switched to a new branch 'bug2'
+
+git add SILab1_2.java  (dodavanje na promenite)
+git commit -m "Fix wrong condition in makeBigStringFrom."
+[bug2 124cdf9] Fix wrong condition in makeBigStringFrom.
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+git checkout bug1  (preflanje na branch bug1)
+Switched to branch 'bug1'
+
+git add SILab1Main.java  (dodavanje promeni)
+
+git commit -m "Call method filterOddLengthStrings in main class"  (pravenje commit)
+[bug1 b3c074b] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+
+git checkout bug2  (preflanje na branch bug2)
+Switched to branch 'bug2'
+
+git add SILab1Main.java  (dodavanje promeni)
+
+git commit -m " Call method makeBigStringFrom in main class."  (pravenje commit)
+[bug2 f3b3994]  Call method makeBigStringFrom in main class.
+ 1 file changed, 1 insertion(+)
+
+git push origin bug2  (pustanje na lokalnite promeni na remote repo)
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.44 KiB | 490.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+remote: 
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/bravoteofanija/SI_2024_lab1_214002/pull/new/bug2
+remote: 
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+ * [new branch]      bug2 -> bug2
+
+git checkout bug1 (preflanje na branch bug1)
+Switched to branch 'bug1'
+
+git push origin bug1  (pustanje na lokalnite promeni na remote repo)
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 738 bytes | 738.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/bravoteofanija/SI_2024_lab1_214002/pull/new/bug1
+remote: 
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+ * [new branch]      bug1 -> bug1
+
+git checkout master  (preflanje na branch master)
+Switched to branch 'master'
+
+git push origin master  (pustanje na lokalnite promeni na remote repo)
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+   21e5ef1..59c179c  master -> master
+
+git merge bug1  (spojuvanje na bug1 vo master)
+Updating 59c179c..b3c074b
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+git push origin master  (pustanje na lokalnite promeni na remote repo)
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+   59c179c..b3c074b  master -> master
+
+git checkout bug2  (prefrlanje na branch bug2)
+Switched to branch 'bug2'
+
+git rebase master  (pravenje rebase sprema master)
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply f3b3994...  Call method makeBigStringFrom in main class.
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply f3b3994... Call method makeBigStringFrom in main class.
+
+Se pojavi konflikt vo kodot na linija 16 na SILab1Main.java. Go resiv konfliktot taka sto gi prifativ dvete promeni.
+
+git add .  (dodavanje na popravkata na konfliktot)
+
+git rebase --continue  (prodolzuvanje so rebasing)
+[detached HEAD 545f59c]  Call method makeBigStringFrom in main class.
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/bug2.
+
+git checkout master  (prefrlanje na branch master)
+Switched to branch 'master'
+
+git merge bug2  (spouvanje na bug2 vo master)
+Updating b3c074b..545f59c
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_2.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+git checkout bug2  (prefrlanje na branch bug2)
+Switched to branch 'bug2'
+
+git push origin bug2  (pustanje na promenie od bug2 na remote repo)
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+ ! [rejected]        bug2 -> bug2 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/bravoteofanija/SI_2024_lab1_214002.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git push origin bug2 --force  (pustanje na promenie od bug2 na remote repo so force)
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/bravoteofanija/SI_2024_lab1_214002.git
+ + f3b3994...545f59c bug2 -> bug2 (forced update)
+
+git log  (zemanje na logovi od bug2)
+
+git checkout master
+Switched to branch 'master'
+
+git log   (zemanje na logovi od master)
+
+git checkout bug1 
+Switched to branch 'bug1'
+
+git log  (zemanje na logovi od bug1)
+
+nano logs.txt  (pravenje na datoteka logs.txt)
+
+
+
+
+
+
+
+

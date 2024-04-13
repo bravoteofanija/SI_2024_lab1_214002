@@ -1,0 +1,106 @@
+master logs:
+
+commit 545f59c92f0a66e4848c8762cf073da845ac767f (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:14:47 2024 +0200
+
+     Call method makeBigStringFrom in main class.
+
+commit 48c120db3dd903af4b6c879212b187a3580de13b
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:06:22 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom.
+
+commit b3c074bd28d5c6aee3125017ee6d0c7d87fb44e1 (origin/bug1, bug1)
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:11:51 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit bc040058f1760f38e125d1abf960a0d502eaf2f7
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:02:29 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 59c179c001a5c1d907beb15e91902a3ae579c14d
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:57:15 2024 +0200
+
+    Add starter code
+
+commit 21e5ef1647c779435639abe3264e5b2c2ce08b97
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:48:39 2024 +0200
+
+    Initial commit
+
+bug1 logs:
+
+commit b3c074bd28d5c6aee3125017ee6d0c7d87fb44e1 (HEAD -> bug1, origin/bug1)
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:11:51 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit bc040058f1760f38e125d1abf960a0d502eaf2f7
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:02:29 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 59c179c001a5c1d907beb15e91902a3ae579c14d
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:57:15 2024 +0200
+
+    Add starter code
+
+commit 21e5ef1647c779435639abe3264e5b2c2ce08b97
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:48:39 2024 +0200
+
+    Initial commit
+
+
+bug2 logs:
+
+commit 545f59c92f0a66e4848c8762cf073da845ac767f (HEAD -> bug2, origin/master, origin/bug2, master)
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:14:47 2024 +0200
+
+     Call method makeBigStringFrom in main class.
+
+commit 48c120db3dd903af4b6c879212b187a3580de13b
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:06:22 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom.
+
+commit b3c074bd28d5c6aee3125017ee6d0c7d87fb44e1 (origin/bug1, bug1)
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:11:51 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit bc040058f1760f38e125d1abf960a0d502eaf2f7
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 15:02:29 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 59c179c001a5c1d907beb15e91902a3ae579c14d
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:57:15 2024 +0200
+
+    Add starter code
+
+commit 21e5ef1647c779435639abe3264e5b2c2ce08b97
+Author: Teofanija Bravo <bravoteofanija@gmail.com>
+Date:   Sat Apr 13 14:48:39 2024 +0200
+
+    Initial commit
+
+
+
+
